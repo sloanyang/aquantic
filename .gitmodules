@@ -7,3 +7,9 @@
 [submodule "aquanticvisualizer"]
 	path = aquanticvisualizer
 	url = https://github.com/sloanyang/aquanticvisualizer.git
+[submodule "BrowserBenchmark"]
+	path = BrowserBenchmark
+	url = https://github.com/sloanyang/BrowserBenchmark.git
+[submodule "jitedjs"]
+	path = jitedjs
+	url = https://github.com/sloanyang/jitedjs.git
