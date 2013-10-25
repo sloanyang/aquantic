@@ -13,3 +13,6 @@
 [submodule "jitedjs"]
 	path = jitedjs
 	url = https://github.com/sloanyang/jitedjs.git
+[submodule "Tools/Scripts/python/gyp"]
+	path = Tools/Scripts/python/gyp
+	url = https://github.com/sloanyang/gyp.git
