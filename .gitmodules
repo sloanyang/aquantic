@@ -4,3 +4,6 @@
 [submodule "aquanticbuilder"]
 	path = aquanticbuilder
 	url = https://github.com/sloanyang/aquanticbuilder.git
+[submodule "aquanticvisualizer"]
+	path = aquanticvisualizer
+	url = https://github.com/sloanyang/aquanticvisualizer.git
