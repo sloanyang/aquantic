@@ -1,3 +1,6 @@
 [submodule "webkit"]
 	path = webkit
 	url = https://github.com/sloanyang/webkit.git
+[submodule "aquanticbuilder"]
+	path = aquanticbuilder
+	url = https://github.com/sloanyang/aquanticbuilder.git
