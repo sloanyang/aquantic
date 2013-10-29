@@ -37,6 +37,7 @@ def main():
 
     uploader = Uploader(server, port)
     uploader.UploadJson(os.path.abspath( os.path.join(archiveDir, "result.json")) )
+    os.remove(os.path.abspath( os.path.join(archiveDir, "result.json")) )
 
 if __name__ == '__main__':
     sys.exit(main())
