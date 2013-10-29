@@ -24,7 +24,7 @@ then
 
 	if [ $((revision+1)) -lt $((stop_revision)) ] 
 	then 
-		git checkout $git_revision
+		git checkout -f $git_revision
 		cd ..
 		echo $((revision+1)) > $PWD/Tools/WebkitHistoryRewinder/gtk-version-local.txt
 	else
@@ -54,7 +54,7 @@ then
 
 	if [ $((revision+1)) -lt $((stop_revision)) ] 
 	then 
-		git checkout $git_revision
+		git checkout -f $git_revision
 		cd ..
 		echo $((revision+1)) > $PWD/Tools/WebkitHistoryRewinder/uc-version-local.txt
 	else
