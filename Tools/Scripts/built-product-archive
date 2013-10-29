@@ -173,7 +173,7 @@ def archiveBuiltProduct(configuration, platform):
 
 
 def unzipArchive(directoryToExtractTo, configuration):
-    archiveDir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "WebKitBuild"))
+    archiveDir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "webkit", "WebKitBuild"))
     assert os.path.isdir(archiveDir)
     archiveFile = os.path.join(archiveDir, configuration + ".zip")
 
