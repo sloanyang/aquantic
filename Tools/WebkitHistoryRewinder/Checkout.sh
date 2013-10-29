@@ -11,6 +11,11 @@ then
 		revision=`cat $PWD/Tools/WebkitHistoryRewinder/gtk-version.txt`
 	fi
 
+	if [ ! -d $PWD/webkit/WebKitBuild ]
+	then
+		mkdir $PWD/webkit/WebKitBuild
+	fi
+
 	echo "Checking out to r$revision"
 	git_revision=`$rootdir/Tools/Scripts/git-svn.sh find-rev $revision $rootdir/webkit`
 	cd webkit
@@ -25,6 +30,11 @@ then
 		revision=`cat $PWD/Tools/WebkitHistoryRewinder/uc-version-local.txt`
 	else 
 		revision=`cat $PWD/Tools/WebkitHistoryRewinder/uc-version.txt`
+	fi
+
+	if [ ! -d $PWD/webkit/WebKitBuild ]
+	then
+		mkdir $PWD/webkit/WebKitBuild
 	fi
 
 	echo "Checking out to r$revision"
