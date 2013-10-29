@@ -22,7 +22,7 @@ then
 	git_revision=`$rootdir/Tools/Scripts/git-svn.sh find-rev $revision $rootdir/webkit`
 	cd webkit
 
-	if [ $((revision+1)) -lt $((stop_revision)) ] 
+	if [ $((revision)) -lt $((stop_revision)) ] 
 	then 
 		git checkout -f $git_revision
 		cd ..
@@ -52,7 +52,7 @@ then
 	git_revision=`$rootdir/Tools/Scripts/git-svn.sh find-rev $revision $rootdir/webkit`
 	cd webkit
 
-	if [ $((revision+1)) -lt $((stop_revision)) ] 
+	if [ $((revision)) -lt $((stop_revision)) ] 
 	then 
 		git checkout -f $git_revision
 		cd ..
