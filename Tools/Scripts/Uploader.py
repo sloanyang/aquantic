@@ -20,8 +20,9 @@ class Uploader(object):
         self.test_results_server = "%s:%s" % (server, port)
         self._host = Host()
 
-    def UploadJson(self, json_path, host_path="/api/report", file_uploader=FileUploader):
-        url = "https://%s%s" % (self.test_results_server, host_path)
+    def UploadJson(self, json_path, host_path="/api/test/report", file_uploader=FileUploader):
+        url = "http://%s%s" % (self.test_results_server, host_path)
+        print url
         uploader = file_uploader(url, 120)
         try:
             response = uploader.upload_single_text_file(self._host.filesystem, 'application/json', json_path)
@@ -31,15 +32,7 @@ class Uploader(object):
 
         response_body = [line.strip('\n') for line in response]
         if response_body != ['OK']:
-            try:
-                parsed_response = json.loads('\n'.join(response_body))
-            except:
-                print "Uploaded JSON to %s but got a bad response:" % url
-            if parsed_response.get('status') != 'OK':
-                print "Uploaded JSON to %s but got an error:" % url
-                print json.dumps(parsed_response, indent=4)
-                return False
-
+            print response_body
         print "JSON file uploaded to %s." % url
         return True
 
