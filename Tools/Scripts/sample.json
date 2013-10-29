@@ -1,0 +1,13 @@
+{
+  "branch": "master",
+  "password": "Gtk-Jsc",
+  "platform": "x86",
+  "builder-name": "Gtk-Jsc",
+  "build-number": "BUILD_NUMBER",
+  "timestamp": TIMESTAMP,
+  "webkit-revision": WEBKIT_REVISION,
+  "chromium-revision": 10000,
+  "results": {
+    "sunspider_test": RESULT
+  }
+}
