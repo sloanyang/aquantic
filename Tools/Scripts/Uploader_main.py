@@ -23,7 +23,7 @@ def main():
 
     #create result.json file
     archiveDir = os.path.abspath(os.path.join(os.path.dirname(__file__)))
-    with open('sample.json','r') as f:
+    with open(os.path.abspath(os.path.join(archiveDir, "sample.json")),'r') as f:
         newlines = []
         for line in f.readlines():
             newlines.append(line.replace('RESULT', result).
@@ -31,7 +31,7 @@ def main():
                             replace('WEBKIT_REVISION', webkitrevision).
                             replace('TIMESTAMP',str(int(time.time()))) )
 
-    with open('result.json', 'w') as f:
+    with open(os.path.abspath( os.path.join(archiveDir, "result.json")) , 'w') as f:
         for line in newlines:
             f.write(line)
 
