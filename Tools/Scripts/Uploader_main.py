@@ -18,7 +18,7 @@ def main():
 
     options, (result, buildnumber, webkitrevision, ) = parser.parse_args()
 
-    server="10.1.47.72"
+    server="192.168.0.21"
     port="8080"
 
     #create result.json file
