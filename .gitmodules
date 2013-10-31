@@ -16,3 +16,6 @@
 [submodule "Tools/Scripts/python/gyp"]
 	path = Tools/Scripts/python/gyp
 	url = https://github.com/sloanyang/gyp.git
+[submodule "Tools/gyp"]
+	path = Tools/gyp
+	url = https://github.com/sloanyang/gyp.git
