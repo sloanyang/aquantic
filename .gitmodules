@@ -19,3 +19,6 @@
 [submodule "Tools/gyp"]
 	path = Tools/gyp
 	url = https://github.com/sloanyang/gyp.git
+[submodule "Tools/Depends"]
+	path = Tools/Depends
+	url = https://github.com/sloanyang/depends.git
