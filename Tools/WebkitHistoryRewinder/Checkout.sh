@@ -26,7 +26,7 @@ then
 	then 
 		git checkout -f $git_revision
 		cd ..
-		echo $((revision+1)) > $PWD/Tools/WebkitHistoryRewinder/gtk-version-local.txt
+		echo $((revision+100)) > $PWD/Tools/WebkitHistoryRewinder/gtk-version-local.txt
 	else
 		cd ..
 		exit 2
@@ -56,7 +56,7 @@ then
 	then 
 		git checkout -f $git_revision
 		cd ..
-		echo $((revision+1)) > $PWD/Tools/WebkitHistoryRewinder/uc-version-local.txt
+		echo $((revision+100)) > $PWD/Tools/WebkitHistoryRewinder/uc-version-local.txt
 	else
 		cd ..
 		exit 2
