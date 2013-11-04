@@ -2,4 +2,4 @@
 
 rootdir=$PWD
 
-rm $rootdir/webkit/WebKitBuild -rf
+rm $rootdir/webkit/WebKitBuild/Release -rf
