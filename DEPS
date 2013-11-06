@@ -17,6 +17,8 @@ deps = {
     "ssh://yangqi3@192.168.0.21/home/yangqi3/src/local/uc/JavaScriptCore-trailer",
   "aquantic/Local/android/ndk":
     "ssh://yangqi3@192.168.0.21/home/yangqi3/src/local/android/android-ndk-r8e",
+  "aquantic/Local/uc/Scripts/android-cmake":
+    "https://github.com/taka-no-me/android-cmake.git",
 }
 
 # checkdeps.py shouldn't check include paths for files in these dirs:
