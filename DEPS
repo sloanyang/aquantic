@@ -15,6 +15,8 @@
 deps = {
   "aquantic/Local/uc/JavaScriptCore-trailer":
     "ssh://yangqi3@192.168.0.21/home/yangqi3/src/local/uc/JavaScriptCore-trailer",
+  "aquantic/Local/android/ndk":
+    "ssh://yangqi3@192.168.0.21/home/yangqi3/src/local/android/android-ndk-r8e",
 }
 
 # checkdeps.py shouldn't check include paths for files in these dirs:
