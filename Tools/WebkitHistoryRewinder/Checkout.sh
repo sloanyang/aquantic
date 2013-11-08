@@ -27,6 +27,8 @@ then
 		git checkout -f $git_revision
 		cd ..
 		echo $((revision+100)) > $PWD/Tools/WebkitHistoryRewinder/gtk-version-local.txt
+		rm $PWD/webkit/Tools/gtk
+		cp $PWD/Tools/WebkitPatches/gtk $PWD/webkit/Tools/ -a
 	else
 		cd ..
 		exit 2
