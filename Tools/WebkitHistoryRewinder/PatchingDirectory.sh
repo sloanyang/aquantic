@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rootdir=$PWD
+rm $rootdir/webkit/Tools/gtk -rf
 
 if [ ! -d $rootdir/webkit/WebKitBuild/Release/Libraries ] 
 then 
