@@ -62,16 +62,16 @@ then
 		exit 2
 	fi
 
-elif [ $1 = "qt" ]
+elif [ $1 = "gtkArm" ]
 then
-	if [ -e $PWD/Tools/WebkitHistoryRewinder/qt-version-local.txt ]
+	if [ -e $PWD/Tools/WebkitHistoryRewinder/gtkArm-version-local.txt ]
 	then
-		revision=`cat $PWD/Tools/WebkitHistoryRewinder/qt-version-local.txt`
+		revision=`cat $PWD/Tools/WebkitHistoryRewinder/gtkArm-version-local.txt`
 	else 
-		revision=`cat $PWD/Tools/WebkitHistoryRewinder/qt-version.txt`
+		revision=`cat $PWD/Tools/WebkitHistoryRewinder/gtkArm-version.txt`
 	fi
 
-	stop_revision=`cat $PWD/Tools/WebkitHistoryRewinder/qt-version-end.txt`
+	stop_revision=`cat $PWD/Tools/WebkitHistoryRewinder/gtkArm-version-end.txt`
 
 	if [ ! -d $PWD/webkit/WebKitBuild ]
 	then
@@ -86,7 +86,7 @@ then
 	then 
 		git checkout -f $git_revision
 		cd ..
-		echo $((revision+100)) > $PWD/Tools/WebkitHistoryRewinder/qt-version-local.txt
+		echo $((revision+100)) > $PWD/Tools/WebkitHistoryRewinder/gtkArm-version-local.txt
 	else
 		cd ..
 		exit 2
