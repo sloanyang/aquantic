@@ -32,7 +32,7 @@ deps = {
   "aquantic/jitedjs":
 	"https://github.com/sloanyang/jitedjs.git",
   "aquantic/webkit":
-	"https://github.com/sloanyang/webkit.git",
+	"git://git.webkit.org/WebKit.git",
   "aquantic/Tools/Depends":
 	"https://github.com/sloanyang/depends.git",
   "aquantic/Tools/Scripts/python/gyp":
