@@ -10,7 +10,7 @@ class GitLogParser:
 
 		GIT_LOG_FORMAT = '%x1f'.join(GIT_LOG_FORMAT) + '%x1e'
 
-		p = subprocess.Popen('git log --format="%s"' % GIT_LOG_FORMAT, shell=True, stdout=subprocess.PIPE, cwd=directory)
+		p = subprocess.Popen('git log --since={2011-11-10} --format="%s"' % GIT_LOG_FORMAT, shell=True, stdout=subprocess.PIPE, cwd=directory)
 		(log, _) = p.communicate()
 
 		log = log.strip('\n\x1e').split("\x1e")
