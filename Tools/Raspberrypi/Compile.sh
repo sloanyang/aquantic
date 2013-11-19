@@ -21,4 +21,4 @@ export PKG_CONFIG_LIBDIR=${SYSROOT}/usr/lib/pkgconfig:${SYSROOT}/usr/share/pkgco
 export PKG_CONFIG_PATH=${SYSROOT}/usr/lib/pkgconfig:${SYSROOT}/usr/share/pkgconfig
 export PKG_CONFIG_SYSROOT_DIR=${SYSROOT}
 
-./webkit/Tools/Scripts/build-jsc --gtk --release --prefix=$BUILD_ROOT/usr/arm-buildroot-linux-gnueabihf/sysroot/usr --enable-webkit1=yes --enable-webkit2=no --host=$ARCH icu_config=$ROOTFS_DIR/usr/ --with-gtk=2.0 --with-sysroot=$ROOTFS_DIR --disable-introspection
+./webkit/Tools/Scripts/build-jsc --gtk --release --enable-webkit1=yes --enable-webkit2=no --host=$ARCH icu_config=$ROOTFS_DIR/usr/ --with-gtk=2.0 --with-sysroot=$ROOTFS_DIR --disable-introspection --enable-static=yes --enable-shared=no 
