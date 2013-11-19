@@ -33,6 +33,10 @@ deps = {
 	"https://github.com/sloanyang/jitedjs.git",
   "aquantic/webkit":
 	"https://github.com/sloanyang/webkit.git",
+  "aquantic/Tools/Depends":
+	"https://github.com/sloanyang/depends.git",
+  "aquantic/Tools/Scripts/python/gyp":
+	"https://github.com/sloanyang/gyp.git",
 }
 
 # checkdeps.py shouldn't check include paths for files in these dirs:
