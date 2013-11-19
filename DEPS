@@ -21,13 +21,28 @@ deps = {
     "https://github.com/taka-no-me/android-cmake.git",
   "aquantic/3rdparty/RaspberryPi-BuildRoot":
     "https://github.com/sloanyang/RaspberryPi-BuildRoot.git",
+  "aquantic/BrowserBenchmark":
+	"https://github.com/sloanyang/BrowserBenchmark.git",
+  "aquantic/BrowserBenchmark/Scrapy-BrowserBenchmark":
+	"https://github.com/sloanyang/Scrapy-BrowserBenchmark.git",
+  "aquantic/aquanticbuilder":
+	"https://github.com/sloanyang/aquanticbuilder.git",
+  "aquantic/aquanticvisualizer":
+	"https://github.com/sloanyang/aquanticvisualizer.git",
+  "aquantic/jitedjs":
+	"https://github.com/sloanyang/jitedjs.git",
+  "aquantic/webkit":
+	"https://github.com/sloanyang/webkit.git",
+  "aquantic/Tools/Depends":
+	"https://github.com/sloanyang/depends.git",
+  "aquantic/Tools/Scripts/python/gyp":
+	"https://github.com/sloanyang/gyp.git",
 }
 
 # checkdeps.py shouldn't check include paths for files in these dirs:
 skip_child_includes = [
   "aquanticbuilder",
   "aquanticvisualizer",
-  "BrowserBenchmark",
   "jitedjs",
   "Tools",
   "webkit",
