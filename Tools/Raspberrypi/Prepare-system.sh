@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rootdir=$PWD
+rootdir=$PWD/aquantic
 
 cd $rootdir/3rdparty/RaspberryPi-BuildRoot
 make raspberrypi_defconfig

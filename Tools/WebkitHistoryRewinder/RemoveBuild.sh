@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rootdir=$PWD
+rootdir=$PWD/aquantic
 
 rm $rootdir/webkit/WebKitBuild/Release -rf

@@ -1,21 +1,21 @@
 #!/bin/bash
 
-rootdir=$PWD
+rootdir=$PWD/aquantic
 
 if [ $1 = "gtk" ]
 then 
-	if [ -e $PWD/Tools/WebkitHistoryRewinder/gtk-version-local.txt ]
+	if [ -e $PWD/aquantic/Tools/WebkitHistoryRewinder/gtk-version-local.txt ]
 	then
-		revision=`cat $PWD/Tools/WebkitHistoryRewinder/gtk-version-local.txt`
+		revision=`cat $PWD/aquantic/Tools/WebkitHistoryRewinder/gtk-version-local.txt`
 	else 
-		revision=`cat $PWD/Tools/WebkitHistoryRewinder/gtk-version.txt`
+		revision=`cat $PWD/aquantic/Tools/WebkitHistoryRewinder/gtk-version.txt`
 	fi
 
-	stop_revision=`cat $PWD/Tools/WebkitHistoryRewinder/gtk-version-end.txt`
+	stop_revision=`cat $PWD/aquantic/Tools/WebkitHistoryRewinder/gtk-version-end.txt`
 
-	if [ ! -d $PWD/webkit/WebKitBuild ]
+	if [ ! -d $PWD/aquantic/webkit/WebKitBuild ]
 	then
-		mkdir $PWD/webkit/WebKitBuild
+		mkdir $PWD/aquantic/webkit/WebKitBuild
 	fi
 
 	echo "Checking out to r$revision"
@@ -26,7 +26,7 @@ then
 	then 
 		git checkout -f $git_revision
 		cd ..
-		echo $((revision+100)) > $PWD/Tools/WebkitHistoryRewinder/gtk-version-local.txt
+		echo $((revision+100)) > $PWD/aquantic/Tools/WebkitHistoryRewinder/gtk-version-local.txt
 	else
 		cd ..
 		exit 2
@@ -34,18 +34,18 @@ then
 
 elif [ $1 = "uc" ]
 then
-	if [ -e $PWD/Tools/WebkitHistoryRewinder/uc-version-local.txt ]
+	if [ -e $PWD/aquantic/Tools/WebkitHistoryRewinder/uc-version-local.txt ]
 	then
-		revision=`cat $PWD/Tools/WebkitHistoryRewinder/uc-version-local.txt`
+		revision=`cat $PWD/aquantic/Tools/WebkitHistoryRewinder/uc-version-local.txt`
 	else 
-		revision=`cat $PWD/Tools/WebkitHistoryRewinder/uc-version.txt`
+		revision=`cat $PWD/aquantic/Tools/WebkitHistoryRewinder/uc-version.txt`
 	fi
 
-	stop_revision=`cat $PWD/Tools/WebkitHistoryRewinder/uc-version-end.txt`
+	stop_revision=`cat $PWD/aquantic/Tools/WebkitHistoryRewinder/uc-version-end.txt`
 
-	if [ ! -d $PWD/webkit/WebKitBuild ]
+	if [ ! -d $PWD/aquantic/webkit/WebKitBuild ]
 	then
-		mkdir $PWD/webkit/WebKitBuild
+		mkdir $PWD/aquantic/webkit/WebKitBuild
 	fi
 
 	echo "Checking out to r$revision"
@@ -56,7 +56,7 @@ then
 	then 
 		git checkout -f $git_revision
 		cd ..
-		echo $((revision+100)) > $PWD/Tools/WebkitHistoryRewinder/uc-version-local.txt
+		echo $((revision+100)) > $PWD/aquantic/Tools/WebkitHistoryRewinder/uc-version-local.txt
 	else
 		cd ..
 		exit 2
@@ -64,18 +64,18 @@ then
 
 elif [ $1 = "gtkArm" ]
 then
-	if [ -e $PWD/Tools/WebkitHistoryRewinder/gtkArm-version-local.txt ]
+	if [ -e $PWD/aquantic/Tools/WebkitHistoryRewinder/gtkArm-version-local.txt ]
 	then
-		revision=`cat $PWD/Tools/WebkitHistoryRewinder/gtkArm-version-local.txt`
+		revision=`cat $PWD/aquantic/Tools/WebkitHistoryRewinder/gtkArm-version-local.txt`
 	else 
-		revision=`cat $PWD/Tools/WebkitHistoryRewinder/gtkArm-version.txt`
+		revision=`cat $PWD/aquantic/Tools/WebkitHistoryRewinder/gtkArm-version.txt`
 	fi
 
-	stop_revision=`cat $PWD/Tools/WebkitHistoryRewinder/gtkArm-version-end.txt`
+	stop_revision=`cat $PWD/aquantic/Tools/WebkitHistoryRewinder/gtkArm-version-end.txt`
 
-	if [ ! -d $PWD/webkit/WebKitBuild ]
+	if [ ! -d $PWD/aquantic/webkit/WebKitBuild ]
 	then
-		mkdir $PWD/webkit/WebKitBuild
+		mkdir $PWD/aquantic/webkit/WebKitBuild
 	fi
 
 	echo "Checking out to r$revision"
@@ -86,7 +86,7 @@ then
 	then 
 		git checkout -f $git_revision
 		cd ..
-		echo $((revision+100)) > $PWD/Tools/WebkitHistoryRewinder/gtkArm-version-local.txt
+		echo $((revision+100)) > $PWD/aquantic/Tools/WebkitHistoryRewinder/gtkArm-version-local.txt
 	else
 		cd ..
 		exit 2

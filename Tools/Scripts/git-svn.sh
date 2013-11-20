@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rootdir=$PWD
+rootdir=$PWD/aquantic
 
-python $PWD/Tools/Scripts/python/main.py -a $1 -r $2 -d $3
+python $PWD/aquantic/Tools/Scripts/python/main.py -a $1 -r $2 -d $3

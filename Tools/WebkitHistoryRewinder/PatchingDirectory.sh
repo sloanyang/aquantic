@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rootdir=$PWD
+rootdir=$PWD/aquantic
 rm $rootdir/webkit/Tools/gtk -rf
 
 if [ ! -d $rootdir/webkit/WebKitBuild/Release/Libraries ] 

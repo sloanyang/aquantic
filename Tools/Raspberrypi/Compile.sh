@@ -1,6 +1,6 @@
 #!/bin/sh
 
-rootdir=$PWD
+rootdir=$PWD/aquantic
 
 export ARCH=arm-bcm2708hardfp-linux-gnueabi
 export CC=arm-bcm2708hardfp-linux-gnueabi-gcc
