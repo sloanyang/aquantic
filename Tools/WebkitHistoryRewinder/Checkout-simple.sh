@@ -20,15 +20,15 @@ then
 
 	echo "Checking out to r$revision"
 	git_revision=`$rootdir/Tools/Scripts/git-svn.sh find-rev $revision $rootdir/webkit`
-	cd webkit
+	cd $PWD/aquantic/webkit
 
 	if [ $((revision)) -lt $((stop_revision)) ] 
 	then 
 		git checkout -f $git_revision
-		cd ..
+		cd $PWD
 		echo $((revision+100)) > $PWD/aquantic/Tools/WebkitHistoryRewinder/gtk-version-local.txt
 	else
-		cd ..
+		cd $PWD
 		exit 2
 	fi
 
@@ -50,15 +50,15 @@ then
 
 	echo "Checking out to r$revision"
 	git_revision=`$rootdir/Tools/Scripts/git-svn.sh find-rev $revision $rootdir/webkit`
-	cd webkit
+	cd $PWD/aquantic/webkit
 
 	if [ $((revision)) -lt $((stop_revision)) ] 
 	then 
 		git checkout -f $git_revision
-		cd ..
+		cd $PWD
 		echo $((revision+100)) > $PWD/aquantic/Tools/WebkitHistoryRewinder/uc-version-local.txt
 	else
-		cd ..
+		cd $PWD
 		exit 2
 	fi
 
@@ -80,15 +80,15 @@ then
 
 	echo "Checking out to r$revision"
 	git_revision=`$rootdir/Tools/Scripts/git-svn.sh find-rev $revision $rootdir/webkit`
-	cd webkit
+	cd $PWD/aquantic/webkit
 
 	if [ $((revision)) -lt $((stop_revision)) ] 
 	then 
 		git checkout -f $git_revision
-		cd ..
+		cd $PWD
 		echo $((revision+100)) > $PWD/aquantic/Tools/WebkitHistoryRewinder/gtkArm-version-local.txt
 	else
-		cd ..
+		cd $PWD
 		exit 2
 	fi
 
