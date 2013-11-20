@@ -37,6 +37,8 @@ deps = {
 	"https://github.com/sloanyang/depends.git",
   "aquantic/Tools/Scripts/python/gyp":
 	"https://github.com/sloanyang/gyp.git",
+  "aquantic/Tools/Potter":
+	"https://github.com/sloanyang/Potter.git",
 }
 
 # checkdeps.py shouldn't check include paths for files in these dirs:
