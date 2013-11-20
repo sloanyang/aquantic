@@ -25,10 +25,10 @@ then
 	if [ $((revision)) -lt $((stop_revision)) ] 
 	then 
 		git checkout -f $git_revision
-		cd $PWD
+		cd ../.. 
 		echo $((revision+100)) > $PWD/aquantic/Tools/WebkitHistoryRewinder/gtk-version-local.txt
 	else
-		cd $PWD
+		cd ../..
 		exit 2
 	fi
 
@@ -55,10 +55,10 @@ then
 	if [ $((revision)) -lt $((stop_revision)) ] 
 	then 
 		git checkout -f $git_revision
-		cd $PWD
+		cd ../..
 		echo $((revision+100)) > $PWD/aquantic/Tools/WebkitHistoryRewinder/uc-version-local.txt
 	else
-		cd $PWD
+		cd ../..
 		exit 2
 	fi
 
@@ -85,10 +85,10 @@ then
 	if [ $((revision)) -lt $((stop_revision)) ] 
 	then 
 		git checkout -f $git_revision
-		cd $PWD
+		cd ../..
 		echo $((revision+100)) > $PWD/aquantic/Tools/WebkitHistoryRewinder/gtkArm-version-local.txt
 	else
-		cd $PWD
+		cd ../..
 		exit 2
 	fi
 
